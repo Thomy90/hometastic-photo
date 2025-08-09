@@ -50,6 +50,8 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.photoprism.entrypoints=websecure"
       - "traefik.http.routers.photoprism.rule=Host(`photoprism.home.tastic`)"
+      - "diun.enable=true"
+      - "diun.include_tags=^\\d+$"
       - "homepage.group=Media & Entertainment"
       - "homepage.name=PhotoPrism"
       - "homepage.icon=photoprism.png"
